@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firebase Crud</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.0/pulse/bootstrap.min.css">
+</head>
+<body>
+    
+   <div class="container p 4">
+       <div class="rew">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <form id="task-form">
+                        <div class="form-group">
+                            <input type="text" id="task-title" class="form-control" placeholder="Task Title" autofocus>
+                    
+                        </div>
+                        <div class="form-group">
+                             <textarea  id="task-description" rows="3" class="form-control" placeholder="Task Description"></textarea>
+                    
+                        </div>
+                       <button class="btn btn-primary " id="btn-task-form">
+                           Save
+                       </button>
+                     </form>
+                </div>
+            </div>
+       
+       
+       
+        </div>
+
+        <div class="col-md-6" id="tasks-container"></div>
+       </div>
+   </div>
+
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.15.3/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+     <script src="https://www.gstatic.com/firebasejs/7.15.3/firebase-firestore.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBIgn8S6Dn7LslUm8WYCch3NkDTnSScfVc",
+    authDomain: "fazt-crud-fb-e7e0e.firebaseapp.com",
+    databaseURL: "https://fazt-crud-fb-e7e0e.firebaseio.com",
+    projectId: "fazt-crud-fb-e7e0e",
+    storageBucket: "fazt-crud-fb-e7e0e.appspot.com",
+    messagingSenderId: "95320397843",
+    appId: "1:95320397843:web:23de62acace25b767587e6"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+    <script src="index.js"></script>
+
+</body>
+</html>
